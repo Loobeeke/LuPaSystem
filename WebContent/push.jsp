@@ -8,11 +8,56 @@
 <link rel = "stylesheet" href = "css/push.css" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <link rel="stylesheet" href="assets/css/vendor.css" />
+<link rel="stylesheet" href="yueban/css/cityselect.css">
+<script type="text/javascript" src="yueban/js/cityselect.js"></script>
+
 <script type="text/javascript" src="assets/js/active.js" ></script>
 <script type="text/javascript" src="assets/js/vendor.js" ></script>
+<style type="text/css">
+.logo img{
+	max-width:70%;
+}
+.ban img{
+	width:100%;
+}
+img{
+	width:100%;
+	height:100%
+}
+input{
+border: 1px solid #b3cef9;
+background-color:rgba(0,0,0,0);
+}
+textarea{
+border: 1px solid #b3cef9;
+background-color:rgba(0,0,0,0);
+}
+html{
+	width:100%;
+	height:100%
+}
+form{
+
+    border: 1px solid #b3cef9;
+	padding-left:10%;
+}
+
+body{
+	
+	font-family:宋体;
+	background-size:100% ;
+	background: url(images/yue.png)  no-repeat;
+}
+button{
+margin:0 auto;
+}
+
+</style>
+
+
 </head>
 
-<body>
+<body >
 		<header class="header-area"style="left: 0;">
         <!-- main header start -->
         <div class="main-header d-none d-lg-block "style="top:100px;z-index:9;">
@@ -20,12 +65,7 @@
             <div class="header-top bdr-bottom">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="welcome-message">
-                                <p>欢迎来到路趴</p>
-                            </div>
-                        </div>
-                      
+                       
                     </div>
                 </div>
             </div>
@@ -38,9 +78,9 @@
 
                         <!-- start logo area -->
                         <div class="col-lg-3">
-                            <div class="logo">
-                                <a href="index.jsp">
-                                    <img src="assets/img/logo/lupa_logo_wid.png" alt="回到首页">
+                            <div class="logo" >
+                                <a href="index1.jsp">
+                                    <img src="assets/img/logo/lupa_logo_wid.png" alt="回到首页" >
                                 </a>
                             </div>
                         </div>
@@ -53,11 +93,11 @@
                                     <!-- main menu navbar start -->
                                     <nav class="desktop-menu">
                                         <ul>
-                                             <li><a href="#">首页</a></li>
-                                                <li><a href="#">查询</a></li>
-                                                <li><a href="#">约伴</a></li>
-                                                <li><a href="#">商城</a></li>
-                                                <li><a href="#">社交广场</a></li>
+                                         		<li><a href="guide-search.jsp">查询</a></li>
+                                         		<li><a href="guide-shop.jsp">商城</a></li>
+                                                <li><a href="Info?action=query">旅游资讯</a></li>
+                                                <li><a href="appointment?action=query">约伴</a></li>
+                                                <li><a href="Dynamic?action=query">社交广场</a></li>
                                         </ul>
                                     </nav>
                                     <!-- main menu navbar end -->
@@ -76,23 +116,21 @@
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </li>
-                                  
-                                        <li>
-                                        	<!--购物车商品数量-->
-                                            <a href="#" class="minicart-btn">
-                                                <i class="lnr lnr-cart"></i>
-                                                <div class="notification">2</div>
+                                        
+                                        <!--<li>
+                                            <a href="#">
+                                                <i class="lnr lnr-heart"></i>
+                                                <div class="notification">0</div>
                                             </a>
-                                        </li>
+                                        </li>-->
+                                        
                                         <li class="user-hover">
                                             <a href="#">
                                                 <i class="lnr lnr-user"></i>
                                             </a>
                                             <ul class="dropdown-list">
-                                                <li><a href="#">个人中心</a></li>
-                                                <li><a href="#">订单中心</a></li>
-                                                <li><a href="#">信息</a></li>
-                                                <li><a href="#">退出登录</a></li>
+                                                <li><a href="userinfoindex.jsp">添加个人信息</a></li>
+                                                <li><a href="user?action=exit">退出登录</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -140,9 +178,9 @@
         </div>
         <!-- mobile header end -->
     </header>
-         <div class="pushcontent">
-			<form action="appointment?doGet" method="post" enctype="multipart/form-data">
-				<h3 style="font-size: 30px;">发布约伴信息</h3>
+         <div class="pushcontent" style="margin-top:100px;">
+			<form action="appointment?doGet" method="post" enctype="multipart/form-data" style="background-color: rgba(0,0,0,0); margin-left:10%; "class="ban" >
+				<h3 style="font-size: 30px; text-align:center; left:10px;">发布约伴信息</h3>
 				<div class="form-group">
 					<label for="atitle">标题</label><br />
 					<input type="text" name="atitle" style="width: 30%;height: 51px;" placeholder="请输入发布约伴的标题" />	
@@ -159,18 +197,20 @@
 				</div>
 				<div class="form-group">
 					<label for="astartaddress">出发地</label><br />
-					<input type="text" name="astartaddress" style="width: 417px;height: 51px;" placeholder="输入的地址越详细越好" />
+					 <input type="text" name="astartaddress" style="width: 417px;height: 51px;" placeholder="输入的地址越详细越好" />
+					<!-- <input type="text" class="cityinput" id="citySelect" placeholder="请输入目的地"  name="astartaddress"> -->
 					<label for="aphone">电话</label>
 					<input type="text" name="aphone" style="width: 30%;height: 51px;" placeholder="请输入您的联系方式" />		
 				</div>
 				<div class="form-group">
 					<label for="aendaddress">目的地</label><br />
+					<!-- <input type="text" class="cityinput" id="citySelect" placeholder="请输入目的地" name="aendaddress"> -->
 					<input type="text" name="aendaddress" style="width: 417px;height: 51px;" placeholder="输入的地址越详细越好" />	
 				</div>
 				<div class="form-group">
 					<label for="aprice">人均价格</label><br />
 					<input type="text" name="aprice" style="width: 417px;height: 51px;"  />	
-					<label for="atime">日期</label>
+					<label for="atime">天数：</label>
 					<input type="text" name="atime" style="width: 417px;height: 51px;"  />	
 				</div>
 				<div class="form-group">
@@ -190,7 +230,11 @@
     </div> 	
      
 </body>
+<script type="text/javascript" src="yueban/js/cityselect.js"></script>
+
 <script type="text/javascript">
+	var test=new Vcity.CitySelector({input:'citySelect'});	
+	
 	function con(){
 		var text = document.getElementById("content").value;
 	}

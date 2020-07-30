@@ -10,7 +10,14 @@
 
 <link rel="stylesheet" type="text/css" href="css/rbase.css">
 <link rel="stylesheet" type="text/css" href="css/rhome.css">
+<style type="text/css">
+img{
+ width: 100% ;
+ height: 100%;
+}
 
+
+</style>
 </head>
 <body style="background-image: url(images/dynamic01.png); width: 100% ;height: 100%;">
 <section class="aui-content">
