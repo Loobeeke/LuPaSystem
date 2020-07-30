@@ -24,6 +24,7 @@ import com.service.HotelService;
 import com.service.TicketsService;
 import com.util.JdbcUtil;
 import com.util.JsonUtils;
+import com.util.PageUtil;
 
 /**
  * Servlet implementation class HotelServlet
@@ -214,6 +215,74 @@ protected void updatehotel(HttpServletRequest request, HttpServletResponse respo
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("mess", "删除失败，请稍后在试");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+		}
+	}
+	
+	protected void query(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+		try {
+			Integer pagesize=8;
+			Integer cp = Integer.parseInt(request.getParameter("cp")==null?"1":request.getParameter("cp"));
+			String huumber = request.getParameter("huumber");
+			
+			HotelService service = new HotelService();
+			//调用分页工具类
+			String pageTool = PageUtil.getPageTool(request, service.count(huumber), cp, pagesize);
+			
+			request.setAttribute("hotels", service.query(huumber, cp, pagesize));
+			request.setAttribute("pageTool", pageTool);
+			request.getRequestDispatcher("hotel2.jsp").forward(request, response);
+		} catch (Exception e) {
+			e.printStackTrace();
+			request.setAttribute("mess", "查询失败，请稍后在试");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+		}
+	}
+	protected void queryname(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+		try {
+			Integer pagesize=8;
+			Integer cp = Integer.parseInt(request.getParameter("cp")==null?"1":request.getParameter("cp"));
+			String hname = request.getParameter("hname");
+			
+			HotelService service = new HotelService();
+			//调用分页工具类
+			String pageTool = PageUtil.getPageTool(request, service.countname(hname), cp, pagesize);
+			
+			request.setAttribute("hotels", service.queryname(hname, cp, pagesize));
+			request.setAttribute("pageTool", pageTool);
+			request.getRequestDispatcher("hotel2.jsp").forward(request, response);
+		} catch (Exception e) {
+			e.printStackTrace();
+			request.setAttribute("mess", "查询失败，请稍后在试");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+		}
+	}
+	
+	protected void queryId(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+		try {
+			
+			String hnumber = request.getParameter("hnumber");
+			HotelService service = new HotelService();
+			String str =JsonUtils.objectToJson(service.queryId(hnumber));
+			response.getWriter().print(str);
+		} catch (Exception e) {
+			e.printStackTrace();
+			request.setAttribute("mess", "查询失败，请稍后在试");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+		}
+	}
+	
+	protected void querydetail(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+		try {
+			
+			String hnumber = request.getParameter("hnumber");
+			HotelService service = new HotelService();
+			//调用分页工具类
+			String str =JsonUtils.objectToJson(service.querydetail(hnumber).get(0));
+			response.getWriter().print(str);
+		} catch (Exception e) {
+			e.printStackTrace();
+			request.setAttribute("mess", "查询失败，请稍后在试");
 			request.getRequestDispatcher("error.jsp").forward(request, response);
 		}
 	}

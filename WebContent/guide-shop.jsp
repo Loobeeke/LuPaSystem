@@ -65,21 +65,22 @@ document.oncontextmenu=stop;
 <script type="text/javascript">
 	function change(){
 		var bodyBgs = [];
-		bodyBgs[0] = "gui/images/F_01.jpg";
-		bodyBgs[1] = "gui/images/F_07.jpg";
-		bodyBgs[2] = "gui/images/G_09.JPG";
-		bodyBgs[3] = "gui/images/G_10.JPG";
+		bodyBgs[0] = "gui/images/C_1.png";
+		bodyBgs[1] = "gui/images/open.png";
+		bodyBgs[2] = "gui/images/C_1.png";
+		bodyBgs[3] = "gui/images/C_3.png";
+		bodyBgs[4] = "gui/images/open.png";
 		
 		
 //注意 bodyBgs[50] 50是当前序号, 按照顺序添加或删除即可, 但是序号必须是连续的
 
 		//bodyBgs[] = "";
 
-		var randomBgIndex = Math.round( Math.random() * 3);//这里的10是随机取值范围, 取最后一个 bodyBgs[*] 的值即可
+		var randomBgIndex = Math.round( Math.random() * 4);//这里的10是随机取值范围, 取最后一个 bodyBgs[*] 的值即可
 		//document.write('<style>html{background-image:url(' + bodyBgs[randomBgIndex] + ')}</style>');
 		var img1= document.getElementById('bgimg');
 		img1.style.backgroundImage='url(' + bodyBgs[randomBgIndex] + ')';
-	        window.setTimeout(function(){change()},1000);//图片切换时间 1000=1s
+	        window.setTimeout(function(){change()},3000);//图片切换时间 1000=1s
 	}
 	change();
 </script>

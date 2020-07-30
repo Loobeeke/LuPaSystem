@@ -41,18 +41,21 @@
     height: 49px;
     margin-top: 21px;
 }
+.han img{
+	max-width:60%;
+}
 </style>
 </head>
 <body>
-
+	<div class="han">
 	<%@ include file="header2.jsp" %>
-    
+    </div>
 	<!-- <div class="demo">
 		在输入框加入id
 		<input type="text" class="cityinput" id="citySelect" placeholder="请输入目的地">
 		<button id="cityselect">搜索</button>
 	</div>	 -->
-	<div class="bann">
+	<div class="bann" style="margin-top:100px;">
 		<img src="img1/路趴-约伴.png" />
 	</div>
 	

@@ -81,4 +81,13 @@ JdbcUtil jdbc = new JdbcUtil();
 		return infos;
 	}
 	
+	public List<Info> querydetail(String tnumber) {
+		StringBuffer sql = new StringBuffer();
+		sql.append("select * from trvalinfo where 1=1 ");
+		sql.append(" and tnumber like '%"+tnumber+"%'");
+		List<Info> infos = jdbc.queryPreparedStatement(sql.toString(), Info.class);
+		jdbc.close();
+		return infos;
+	}
+	
 }

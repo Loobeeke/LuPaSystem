@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8" import="java.util.*,com.model.*,com.servlet.*"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html >
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,6 +9,21 @@
 <link href="css/index.css" rel="stylesheet">
 <link rel=stylesheet href="css/common.css">
 <link rel=stylesheet href="css/jdc-side-panel.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<!-- Google font (font-family: 'Poppins', sans-serif;) -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700" rel="stylesheet">
+
+<!-- Plugins -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/plugins.css">
+<link rel="stylesheet" href="css/search.css" />
+	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Style Css -->
+<link rel="stylesheet" href="css/ticstyle.css">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" href="css/custom.css">
 <title>路趴-旅游资讯</title>
 </head>
 <body>
@@ -31,14 +46,14 @@
   				Info info = (Info)infos.get(i);
   		%> --%>	
   		<c:forEach items="${infos}" var="info">
-  		<h3>${ info.getTheading()} </h3>
-	    <figure><img src="${ info.getTpicture()}"></figure>
+  		<h3>${info.theading} </h3>
+	    <figure><img src="${ info.tpicture}"></figure>
 	    <ul>
-	      <p>${ info.getTcontent()}</p>
-	      <a title="${ info.getTheading()}" href="/" target="_blank" class="readmore">阅读全文>></a>
+	     <p style="height:100px;">${ info.tcontent}</p>
+	     <a title="${ info.theading}"   data-id="${info.tnumber}" target="_blank" class="readmore" >阅读全文>></a>
 	    </ul>
-	    <p class="dateview"><span>${ info.getTdate()}</span><span>发布时间：[${ info.getTtime()}]</span><span>作者：${ info.getTauthor()}</span></p>
-  		
+	    <p class="dateview" style="margin-top:20px;"><span>${ info.tdate}</span><span>作者：${ info.tauthor}</span><span>发布时间：[${ info.ttime}]</span>
+  		</p>
 	  </c:forEach>
 	   ${pageTool}
 	 </div>
@@ -111,9 +126,149 @@
   
 </div>
 </article>
+<div class="quick-view-modal">
+            <span class="body-overlay"></span>
+            <div class="quick-view-modal-inner">
+                <div class="container">
+
+                    <!-- Product Details Inner -->
+                    <div class="row product-details">
+					
+                        <!-- Product Details Left -->
+                        <div class="col-lg-5">
+                            <div class="product-details-left">
+                                <div class="product-details-images slider-navigation-2">
+                                    <a href="img/product/large-size/product-image-1.jpg"id="P1">
+                                        <img src="" alt="product image"id="i1">
+                                    </a>
+                                    <a href="img/product/large-size/product-image-2.jpg"id="P2">
+                                        <img src="" alt="product image"id="i2">
+                                    </a>
+                                    <a href="img/product/large-size/product-image-3.jpg"id="P3">
+                                        <img src="" alt="product image"id="i3">
+                                    </a>
+                                    <a href="img/product/large-size/product-image-4.jpg"id="P4">
+                                        <img src="" alt="product image"id="i4">
+                                    </a>
+                                </div>
+                                <div class="product-details-thumbs slider-navigation-2" id="P5">										
+                                    <img src="" alt="product image thumb" id="i5">
+                                    <img src="" alt="product image thumb"id="i6">
+                                    <img src="" alt="product image thumb"id="i7">
+                                    <img src="" alt="product image thumb"id="i8">
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Product Details Left -->
+
+                        <!-- Product Details Right -->
+                        <div class="col-lg-7">
+                            <div class="product-details-right">
+                                <h5 class="product-title"id="N1"></h5>
+                                
+                                <div class="ratting-stock-availbility">
+                                    <div class="ratting-box">
+                                        <span class="active"><i class="ti ti-star"></i></span>
+                                        <span class="active"><i class="ti ti-star"></i></span>
+                                        <span class="active"><i class="ti ti-star"></i></span>
+                                        <span class="active"><i class="ti ti-star"></i></span>
+                                        <span><i class="ti ti-star"></i></span>
+                                    </div>
+                                    <span class="stock-available">新发布</span>
+                                </div>
+                                
+                                <p id="D1" style="height: 100px;font-size:16px;">1111111111</p>
+                                
+                                <span class="pricebox" id="PI1"></span><del id="PI2" style="font-size:16px;"></del>
+
+                                <div class="product-details-quantity">
+                                    <div class="quantity-select">
+                                        <input type="text" value="1">
+                                    </div>
+                                    <a href="#" class="sf-button sf-button-sm">
+                                        <span>ADD TO CART</span>
+                                    </a>
+                                </div>
+
+                               
+
+                                <div class="product-details-tags">
+                                    <span>作者</span>
+                                    <ul>
+                                        <li><a href="#" id="S1" style="font-size:20px;"></a></li>
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--// Product Details Right -->
+        			
+                    </div>
+                    <!--// Product Details Inner -->
+                    
+                </div>
+                <button class="close-quickview-modal"><i class="ti ti-close"></i></button>
+            </div>
+        </div>
 <footer>
  <%@ include file="footer.jsp" %>
 </footer>
 <script src="js/silder.js"></script>
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main1.js"></script>
+<script src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$(".readmore").click(function(){
+		//获得被点击的信息的id
+		var tnumber = $(this).attr("data-id");
+		//ajax  根据id查询这一条记录
+		
+		$.ajax({
+			url:"Info",
+			type:"post",
+			data:{"tnumber":tnumber,"action":"querydetail"},
+			dataType:"json",
+			success:function(result){
+				console.log(result)
+				console.log(result.tpicture)
+				$("#P1").attr("href",result.tpicture);
+				$("#P2").attr("href",result.tpicture);
+				$("#P3").attr("href",result.tpicture);
+				$("#P4").attr("href",result.tpicture);
+				$("#i1").attr("src",result.tpicture);
+				$("#i2").attr("src",result.tpicture);
+				$("#i3").attr("src",result.tpicture);
+				$("#i4").attr("src",result.tpicture);
+				$("#i5").attr("src",result.tpicture);
+				$("#i6").attr("src",result.tpicture);
+				$("#i7").attr("src",result.tpicture);
+				$("#i8").attr("src",result.tpicture);
+				$("#P5").attr("src",result.tpicture);
+				$("#N1").html(result.theading);
+				$("#D1").html(result.tcontent);
+				$("#PI1").html(result.tdate);
+				$("#PI2").html(result.ttime);
+				$("#S1").html(result.tauthor);
+				
+			},
+			error:function(){
+				alert("系统发生错误，请联系管理员！");
+			}
+		})
+		$('.quick-view-modal').toggleClass('is-visible');
+		$('.quick-view-modal').find('.body-overlay').toggleClass('is-visible');
+	})
+})
+
+
+</script>
+
 </body>
 </html>

@@ -36,6 +36,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
 	new WOW().init();
 </script>
+
+<style>
+	img{
+		max-width:150%;
+	}
+</style>
 </head>
 <body>
 

@@ -40,4 +40,7 @@ public class InfoService {
 	public void updatelist(Info info) throws Exception{
 		dao.updatelist(info);
 	}
+	public List<Info> querydetail(String tnumber) throws Exception{
+		return dao.querydetail(tnumber);
+	}
 }

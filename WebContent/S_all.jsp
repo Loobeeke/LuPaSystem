@@ -36,13 +36,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
 	new WOW().init();
 </script>
+<style>
+	img{
+		max-width:150%;
+	}
+</style>
 </head>
 <body>
 
 	<div class="header">
 	<%@ include file="header2.jsp" %>
 		<div class="bann" style="width: 100%; display: inline-block;">
-			<img src="F_images/Goods_banner.png" style="max-width:120%;width:120%;margin-top:150px;margin-left:-10%;" >
+			<img src="F_images/Goods_banner.png" style="max-width:120%;width:100%;margin-top:150px;margin-left:-10%;" >
 		</div>           
    </div>
   <%--  <header class="header sticky-header">

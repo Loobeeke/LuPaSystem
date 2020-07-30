@@ -10,14 +10,25 @@
 <link rel=stylesheet href="css/common.css">
 <link rel=stylesheet href="css/jdc-side-panel.css">
 <title>用户旅游动态</title>
+<style type="text/css">
+.han img{
+	max-width:60%;
+}
+.banner{
+	background: url(images/info_banner.png) no-repeat  center;
+    height: 365px;
+    overflow: hidden;
+    
+}
+</style>
 </head>
 <body>
-<header style="top:100px;">
+<header class="han" style="top:00px; ">
 
 <%@include file="header2.jsp" %>
 </header>
 	
-<div class="banner"style="margin-top:80px;">
+<div class="banner"style="margin-top:0px;">
 </div>
 
 <article>

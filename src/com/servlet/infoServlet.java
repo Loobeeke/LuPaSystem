@@ -317,4 +317,19 @@ public class infoServlet extends BaseServlet {
 				request.getRequestDispatcher("error.jsp").forward(request, response);
 			}
 		}
+		
+		protected void querydetail(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+			try {
+				
+				String tnumber = request.getParameter("tnumber");
+				InfoService service = new InfoService();
+				//调用分页工具类
+				String str =JsonUtils.objectToJson(service.querydetail(tnumber).get(0));
+				response.getWriter().print(str);
+			} catch (Exception e) {
+				e.printStackTrace();
+				request.setAttribute("mess", "查询失败，请稍后在试");
+				request.getRequestDispatcher("error.jsp").forward(request, response);
+			}
+		}
 }
