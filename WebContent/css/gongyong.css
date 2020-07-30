@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*注册*/
+.zhuce
+{
+	width:70%;
+	margin-top:100px;
+}
+.zhuce .text
+{
+	line-height:42px;
+	padding:3px 10px;
+	border-bottom:1px solid #ddd;
+	display:block;
+	overflow:hidden;
+}
+.zhuce .text span
+{
+	width:20%;
+	float:left;
+	text-align:center;
+}
+.zhuce .text .input
+{
+	width:80%;
+	height:42px;
+	font-family:"Microsoft Yahei", "Calibri";
+	border:0;
+	float:left;
+	text-indent:20px;
+}
+.zhuce .text .yzm
+{
+	width:25%;
+	text-align:left;
+}
+.zhuce .text .yzm input
+{
+	border:0;
+	padding:3px;
+	font-family:"Microsoft Yahei", "Calibri";
+	background-color:rgba(255,153,0,1);
+	color:#fff;
+	cursor:pointer;
+	font-size:12px;
+}
+/*底部*/
+.foot {
+	width: 100%;
+	height: 50px;
+	background: rgba(218,218,218,1);
+	/*background:#D0D0D0;*/
+	text-align: center;
+	color: #666;
+	position: fixed;
+	bottom: 0;
+}
+.foot a {
+	width: 20%;
+	text-align: center;
+	float: left;
+	display: block;
+}
+.foot a:hover{
+	color:#F30
+}
+.now {
+	color: #F30;
+}
+.foot span{
+	width:100%;
+	display:block;
+}
+.foot span img{
+	width:20px;
+	padding-top:5px;
+}

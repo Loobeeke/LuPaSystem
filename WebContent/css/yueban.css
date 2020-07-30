@@ -1,0 +1,97 @@
+
+
+.bann{
+	
+}
+
+.main{
+	width: 80%;
+	background-color: cornflowerblue;
+	margin-left: 10%;
+	height: 300px;
+	margin-top: 50px;
+}
+.copyright {
+    font-family: 'Dosis', sans-serif!important;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgba(224,224,224,0.3);
+}
+.image-tour p {
+    position: absolute;
+    right: 1%;
+    bottom: 2%;
+    background: #047ffc;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+
+
+.img-fluid {
+    width: 100%;
+    
+    height: 166px;
+}
+.type{
+	margin-top: 20px;
+	}
+.type p {
+    margin-top: -31px;
+    float: right;
+  
+    margin-right: 27px;
+}
+.rating {
+    background: #047ffc;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    padding: 0px 10px 5px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.rating ul li {
+    display: inline-block;
+}
+
+.destinations-info {
+    
+    bottom: -227px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 0px 10px;
+    transition: .5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    display: block;
+}
+#destinations img{
+	width: 100%;
+	height: auto;
+}
+
+.destinations-grids {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.image-position:hover .destinations-grids{
+	display: block;
+}
+.img-fluid{
+	cursor: pointer;
+}

@@ -1,0 +1,180 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #e8eff0;
+	
+}
+#header{
+    width:100%;
+    height:70px;
+    background-color:#CCFFFF;
+    box-shadow: 0 1px 10px rgba(0 ,0 ,0,0.3);
+    position:fixed;
+    top:0;
+    z-index:9999;
+}
+#header .center{
+    max-width:1263px;
+    height:70px;
+    margin:0 auto;
+}
+.center img{
+    width:100px;
+    height:70px;
+    
+    float:left;
+}
+#header .link{
+    width:200px;
+    height:70px;
+    line-height:70px;
+    color:white;
+    float:right;
+}
+#header .link li{
+    width:100px;
+    text-align:center;
+    float:left;
+}
+#header .link li:hover{
+	background-color: #99CCCC;
+}
+#header .link  a {
+    color:#666699;
+    display: block;
+    text-decoration: none;
+}
+#header .link a:hover{
+    background-color:#99CCCC;
+}
+.main2{
+	width: 60%;
+	height: 800px;
+	margin-left: 15%;
+	margin-top: 130px;
+	font-size:22px;
+}
+.sign{
+	
+}
+.act-apply-info{
+	width: 100%;
+	height: 320px;
+	background-color: white;
+	
+}
+@keyframes mover{
+	from{height: 100px}
+	to{height: 200px}
+}
+.infoname{
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+#btn{
+	float: right;
+	margin-right: 30px;
+}
+input{
+	width:300px;
+	height:30px;
+}
+.selIDType{
+	width:300px;
+	height:30px;
+}
+#IsAutoAddContact{
+	width:50px;
+}
+#Auto{
+	width:50px;
+}
+h2{
+	color: orange;
+}
+
+.ICE{
+	width: 100%;
+	height: 181px;
+	background-color: white;
+	margin-top: 38px;
+}
+.1 .2 .3{
+	heigth:50px;
+	display: block;
+	width: 126px;
+	float: left;
+}
+.need{
+	width: 100%;
+	height: 257px;
+	background-color: white;
+	
+}
+#sub{
+	font-size: 30px;
+	color: orange;
+	text-align: center;
+	margin-left: 45%;
+	margin-top:45px;
+}
+#footer{
+    background-color: #CCFFFF;
+    clear:both;
+    position:relative;
+    top:187px;
+   
+}
+#footer .top{
+    max-width:1263px;
+    height:280px;
+    margin:0 auto;
+    text-align:center
+}
+#footer .version{
+    color:#777;
+    text-align: center;
+    padding:10px 0;
+    font-size:13px;
+}
+#footer .block{
+    width:33.33%;
+    height:280px;
+    display:inline-block;
+    text-align:left;
+    color:#ccc;
+    vertical-align:top;
+    display:block;
+    float: left;
+}
+#footer h2{
+    font-size:24px;
+    font-weight:normal;
+    padding:20px 0 0 20px;
+}
+#footer hr{
+    width:90%;
+    border:1px dashed #666666;
+}
+#footer ul{
+    font-size:18px;
+    color:#777;
+    /*padding:10px 20px;*/
+    text-indent:20px;
+    line-height:2;
+}
+#footer .bottom {
+    padding:15px 0;
+    color: #777;
+    text-align: center;
+    font-size: 18px;
+    background-color: #000;
+    border-top: 1px solid #444;
+}
+
+
+

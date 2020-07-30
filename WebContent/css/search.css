@@ -1,0 +1,103 @@
+body{
+    margin: 0px
+}
+.history {
+	text-align: center;
+}
+
+#idNumber1 {
+	width: 66%;
+    overflow: hidden;
+    text-align: left;
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    font-family: "微软雅黑";
+    font-size: 16px;
+	
+}
+
+.delete:after {
+	clear: both;
+	content: '.';
+	display: block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.delete>div {
+	width:66%;
+	height: 4rem;
+	border: 1px solid #EEEEEC;
+	background: #fff;
+	text-align: left;
+	padding-left:.8rem;
+	padding-top: 1rem;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	box-sizing:border-box;
+}
+
+#search {
+		margin-left:0px;
+		width: 89px;
+	    height: 46px;
+	    background-color: #08f;
+	    background-image: url("img/search.png");
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    border-radius: 0 4px 4px 0;
+	    cursor: pointer;
+	    color:#FFF;
+	    font-size:20px;
+	    font-family:楷体;
+}
+
+#his-dele {
+	width: 142px;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    border: 1px solid black;
+    text-align: center;
+    font-family: "微软雅黑";
+	box-sizing:border-box;
+    margin: 1rem auto;
+    display: block;
+}
+
+#idNumber1 input[type="image"]{
+	width: 1.16rem;height: 1.16rem;
+	float: left;
+	margin-right: .42rem;
+}
+#idNumber1 input[type="text"]{
+	height: 1.16rem;
+	line-height: 1.16rem;
+	float: left;
+	color: #878787;
+	text-align: left;
+	font-size: .62rem;
+	background: none;
+}
+
+p{
+    width: 66%;
+    height: ;
+    overflow: hidden;
+    clear: both;
+    border: 1px solid #eee;
+    background: #fff;
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-top: -.05rem;
+	box-sizing:border-box;
+	margin-left:10rem;
+}
+
+
+
