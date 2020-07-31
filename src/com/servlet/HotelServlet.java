@@ -221,7 +221,7 @@ protected void updatehotel(HttpServletRequest request, HttpServletResponse respo
 	
 	protected void query(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
 		try {
-			Integer pagesize=8;
+			Integer pagesize=100;
 			Integer cp = Integer.parseInt(request.getParameter("cp")==null?"1":request.getParameter("cp"));
 			String huumber = request.getParameter("huumber");
 			
