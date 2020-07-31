@@ -61,15 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<form action="foodpage?action=query" method="post">
 		<div class="col-md-6 content_dropdown1">
-		   <!-- <div class="content_dropdown">    
-		       <select class="dropdown" name="faddress" tabindex="10" data-settings='{"wrapperClass":"metro"}'>
-		       			<option value="0">全部</option>	
-            			<option value="0">开封</option>	
-						<option value="1">郑州</option>
-						<option value="2">信阳</option>
-						<option value="3">洛阳</option>
-		        </select>
-		     </div> -->
+		   
 		     <div class="content_dropdown">    
 		       <select class="dropdown" name="ftype" tabindex="10" data-settings='{"wrapperClass":"metro"}'>
             			<option >火锅</option>	
@@ -116,8 +108,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    			</c:forEach>
    			
    	  </div>
-   	 
-   	  
    </div>
    <div style="clear:both;"> ${pageTool}</div>
 

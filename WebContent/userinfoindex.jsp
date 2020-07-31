@@ -189,10 +189,16 @@
 		font-size:16px;
 		border-radius:50px;
 	}
+.han img{
+	max-width:60%;
+}
 </style>
 </head>
 <body>
-<%@ include file="header2.jsp" %>
+<div class="han">
+	<%@ include file="header2.jsp" %>
+</div>
+
 <div class="pc-kk-form" style="width:70%; height:500px; margin:0 auto; margin-top:7%;">
 	<form action="userinfo" method="post">
 		<div class="pc-kk-form-list">

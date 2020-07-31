@@ -65,10 +65,10 @@ document.oncontextmenu=stop;
 <script type="text/javascript">
 	function change(){
 		var bodyBgs = [];
-		bodyBgs[0] = "gui/images/C_2.png";
-		bodyBgs[1] = "gui/images/C_3.png";
-		bodyBgs[2] = "gui/images/open.png";
-		bodyBgs[3] = "gui/images/C_2.png";
+		bodyBgs[0] = "images/lupa_search.png";
+		bodyBgs[1] = "images/lupa_search2.png";
+		bodyBgs[2] = "images/lupa_search.png";
+		bodyBgs[3] = "images/lupa_search2.png";
 		
 		
 //注意 bodyBgs[50] 50是当前序号, 按照顺序添加或删除即可, 但是序号必须是连续的
