@@ -67,11 +67,11 @@
                         <div class="responsive-toggle fa fa-bars"> </div>
                         <nav class="fix-navbar" id="primary-navigation">            
                             <ul class="primary-navbar">                                                
-                                <li><a href="#"> 首页</a></li>
-                                <li><a href="#">查询</a></li>
-								<li><a href="#">约伴</a></li> 
-								<li><a href="#">商城 </a></li>        
-								<li><a href="#"> 社交广场 </a></li>
+                                <li><a href="guide-search.jsp">查询</a></li>
+                                <li><a href="guide-shop.jsp">商城</a></li>
+                                <li><a href="Info?action=query">旅游资讯</a></li>
+                                <li><a href="appointment?action=query">约伴</a></li>
+                                <li><a href="Dynamic?action=query">社交广场</a></li>
                             </ul>                           
                         </nav>
                     </div>
@@ -156,8 +156,6 @@
                                                 <img class="shape" alt="" src="${hotels.hpicture}" />
                                                 <span class="prod-tag tag-1">推荐</span> <span class="prod-tag tag-2">${hotels.htype}</span>
                                                 <div class="prod-icons"> 
-                                                    <a href="#" class="fa fa-heart"></a>
-                                                    <a href="#" class="fa fa-shopping-basket"></a>
                                                    <a  href="#product-preview"  data-id="${hotels.hnumber}" data-toggle="modal" class="fa fa-expand" id="hotel"></a>
                                                 </div>
                                             </div
@@ -195,7 +193,7 @@
                  
                     <div class="tab-content organic-content row"> 
                         <div id="naturix-tab-1" class="tab-pane fade active in"> 
-                            <div class="naturix-slider-1 dots-1"> 
+                            <div class="naturix-slider-1 dots-1" style="height:994px;"> 
                                <c:forEach items="${hotels}" var="hotels"> 
                                 <div class="item"> 
                                     <div class="product-box"> 
@@ -203,8 +201,6 @@
                                             <img class="prod-img" alt="" src="${hotels.hpicture}" />     
                                             <img class="shape" alt="" src="hodel/img/icons/shap-small.png" />
                                             <div class="prod-icons"> 
-                                                <a href="#" class="fa fa-heart"></a>
-                                                <a href="#" class="fa fa-shopping-basket"></a>
                                                 <a  href="#product-preview"  data-id="${hotels.hnumber}" data-toggle="modal" class="fa fa-expand"></a>
                                             </div>
                                         </div>
@@ -224,8 +220,6 @@
                                             <img class="prod-img" alt="" src="${hotels.hpicture}" />     
                                             <img class="shape" alt="" src="hodel/img/icons/shap-small.png" />  
                                             <div class="prod-icons"> 
-                                                <a href="#" class="fa fa-heart"></a>
-                                                <a href="#" class="fa fa-shopping-basket"></a>
                                                <a  href="#product-preview" data-id="${hotels.hnumber}" data-toggle="modal" class="fa fa-expand"></a>
                                             </div>
                                         </div>                                           
@@ -276,7 +270,7 @@
                                         <h3 class="title-sec">Tickets</h3>
                                         <h2 class="section-title"> <span class="light-font">门票 </span> <strong>查询 </strong> </h2>
                                         <h4 class="sub-title"> 查询你的门票信息 </h4>
-                                        <a href="tickets.jsp" class="btn"> <span> 去 查 询 门 票</span> <i class="fa fa-long-arrow-right"></i> </a>
+                                        <a href="Tickets?action=query" class="btn"> <span> 去 查 询 门 票</span> <i class="fa fa-long-arrow-right"></i> </a>
                                     </div>
                                 </div>
                                 
@@ -290,7 +284,7 @@
                                         <h3 class="title-sec">Tourist information</h3>
                                         <h2 class="section-title"> <span class="light-font">旅游</span> <strong> 资讯</strong> </h2>
                                         <h4 class="sub-title">查看旅游资讯 </h4>
-                                        <a href="info.jsp" class="btn"> <span> 去 查 看 资 讯</span> <i class="fa fa-long-arrow-right"></i> </a>
+                                        <a href="Info?action=query" class="btn"> <span> 去 查 看 资 讯</span> <i class="fa fa-long-arrow-right"></i> </a>
                                     </div>
                                 </div>
                                

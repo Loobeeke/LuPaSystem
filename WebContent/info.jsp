@@ -49,10 +49,10 @@
   		<h3>${info.theading} </h3>
 	    <figure><img src="${ info.tpicture}"></figure>
 	    <ul>
-	     <p style="height:100px;">${ info.tcontent}</p>
+	     <p style="height:200px;">${ info.tcontent}</p>
 	     <a title="${ info.theading}"   data-id="${info.tnumber}" target="_blank" class="readmore" >阅读全文>></a>
 	    </ul>
-	    <p class="dateview" style="margin-top:20px;"><span>${ info.tdate}</span><span>作者：${ info.tauthor}</span><span>发布时间：[${ info.ttime}]</span>
+	    <p class="dateview" style="margin-top:20px;"><span>${ info.tdate}</span><span>发布时间：[${ info.ttime}]</span> <span>作者：${ info.tauthor}</span>
   		</p>
 	  </c:forEach>
 	   ${pageTool}

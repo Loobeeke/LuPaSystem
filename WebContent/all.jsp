@@ -98,14 +98,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    			  <div class="grid1">
    				<div class="view view-first">
                   <div class="index_img"><img src="${food.fpicture }" class="img-responsive" alt="" style="width: 262px; height: 180px"/></div>
-   				     <div class="sale">${food.fprice }</div>
+   				     <div class="sale">￥：${food.fprice }</div>
    			          <div class="mask">
                       <div class="info"><i class="search"> </i>联系商家： ${food.fphone }</div>
                       </div>
                   </div> 
                   <i class="b_home"></i>
    				  <div class="inner_wrap2">
-   				 	<h3>${food.fname }</h3>
+   				 	<h3>${food.fname } / ${food.ftype}</h3>
    				 	<ul class="star1">
    				 	  <h4 class="green">${ food.fstore}</h4>
    				 	  <li>￥:${food.fprice }/份</li>

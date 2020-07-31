@@ -65,9 +65,9 @@
 					<input type="hidden"name="ttime"id="time">
 				</div>
 				<div class="aui-form-input">
-				<%-- <%User user=(User)session.getAttribute("user"); %> --%>
+					<%User user=(User)session.getAttribute("user"); %>
 					<label class="aui-label-control" for="tauthor"></label>
-					<input type="hidden"name="tauthor" value="${session.user.username }">
+					<input type="hidden"name="tauthor" value="<%=user.getUsername()%>">
 				</div>
 			</div>
 			<div class="aui-form-group-text">

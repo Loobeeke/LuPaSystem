@@ -117,12 +117,6 @@ margin:0 auto;
                                             </a>
                                         </li>
                                         
-                                        <!--<li>
-                                            <a href="#">
-                                                <i class="lnr lnr-heart"></i>
-                                                <div class="notification">0</div>
-                                            </a>
-                                        </li>-->
                                         
                                         <li class="user-hover">
                                             <a href="#">
@@ -179,7 +173,7 @@ margin:0 auto;
         <!-- mobile header end -->
     </header>
          <div class="pushcontent" style="margin-top:100px;">
-			<form action="appointment?doGet" method="post" enctype="multipart/form-data" style="background-color: rgba(0,0,0,0); margin-left:10%; "class="ban" >
+			<form action="appointment?action=add" method="post" enctype="multipart/form-data" style="background-color: rgba(0,0,0,0); margin-left:10%; "class="ban" >
 				<h3 style="font-size: 30px; text-align:center; left:10px;">发布约伴信息</h3>
 				<div class="form-group">
 					<label for="atitle">标题</label><br />

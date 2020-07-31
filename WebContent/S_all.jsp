@@ -69,13 +69,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<div class="col-md-6 content_dropdown1">
-			     <form action="goods?action=query" role="search_by_ftype" >
+			     <form action="goods?action=query" method="post" role="search_by_ftype" >
 			     <div class="content_dropdown">    
 			       <select class="dropdown" tabindex="10" id="gtype" name="gtype" data-settings='{"wrapperClass":"metro"}'>
-	            			<option value="0">纪念品</option>	
-							<option value="1">食品</option>
-							<option value="3">服饰</option>
-							<option value="3">饰品</option>
+	            			<option value="纪念品">纪念品</option>	
+							<option value="食品">食品</option>
+							<option value="服饰">服饰</option>
+							<option value="饰品">饰品</option>
 			        </select>
 			        <!-- <input type="hidden" name="action" value="search_by_ftype"> -->
 			       </div>
@@ -96,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    			  <div class="grid1">
    				<div class="view view-first">
                   <div class="index_img"><img src="${goods.gpicture }" class="img-responsive" alt="" style="width: 262px; height: 260px"/></div>
-   				     <div class="sale">${goods.gprice }</div>
+   				     <div class="sale">￥：${goods.gprice }</div>
    			          <div class="mask">
                       <div class="info"><i class="search"> </i> 联系商家：${goods.gphone }</div>
                       </div>

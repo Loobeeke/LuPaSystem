@@ -33,14 +33,14 @@
                 <div class="layui-col-md12">
                     <div class="layui-card">
                         <div class="layui-card-body ">
-                            <form class="layui-form layui-col-space5">
+                           <!--  <form class="layui-form layui-col-space5">
                                 <div class="layui-input-inline layui-show-xs-block">
                                     <input type="text" id="theading" name="theading" placeholder="请输入账号" autocomplete="off" class="layui-input"></div>
                                 <div class="layui-input-inline layui-show-xs-block">
                                     <button class="layui-btn" id="search" >
                                         <i class="layui-icon">&#xe615;</i></button>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                         <div class="layui-card-header">
                             <!-- <button class="layui-btn layui-btn-danger" onclick="delAll()">
@@ -89,7 +89,7 @@
                             </table>
                         </div>
                       
-                       <div class="layui-card-body ">
+                      <!--  <div class="layui-card-body ">
                             <div class="page">
                                 <div>
                                     <a class="prev" href="">&lt;&lt;</a>
@@ -99,7 +99,7 @@
                                     <a class="num" href="">489</a>
                                     <a class="next" href="">&gt;&gt;</a></div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
 										   <!--  如果点击的时候就弹出页面  需要在food-edit。jsp  发送ajax请求获取数据 -->
                                             <div class="layui-btn-group">
 	                                        	<button type="button" onclick="xadmin.open('编辑','personal-edit.jsp?uphone=`+item.uphone+`')" class="layui-btn ">修改</button>
-	                                            <button type="button" href="userinfo?action=delete&uphone=`+item.uphone+`" class="layui-btn">删除</button>
+	                                            <button type="button" onclick="window.location.href = 'userinfo?action=delete&uphone=`+item.uphone+`'" class="layui-btn">删除</button>
 	                                         </div>
 	                                	</td>
 									</tr>

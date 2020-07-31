@@ -212,7 +212,7 @@
 		</div>
 		
 		<div class="pc-kk-form-list" style="height:auto">
-			<textarea placeholder="请输入内容" name="uexplain"></textarea>
+			<textarea placeholder="个人介绍" name="uexplain"></textarea>
 		</div>
 		<div class="pc-kk-form-btn">
 			<input type="hidden" name="action" value="add" >

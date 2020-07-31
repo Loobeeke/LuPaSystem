@@ -98,7 +98,7 @@
                                                 <i class="lnr lnr-user"></i>
                                             </a>
                                             <ul class="dropdown-list">
-                                                <li><a href="userinfoindex.jsp">添加个人信息</a></li>
+                                                <li><a href="userinfoindex.jsp">完善个人信息</a></li>
                                                 <li><a href="user?action=exit">退出登录</a></li>
                                             </ul>
                                         </li>

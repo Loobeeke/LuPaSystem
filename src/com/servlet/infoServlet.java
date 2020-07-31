@@ -44,7 +44,7 @@ public class infoServlet extends BaseServlet {
 	    }
 	protected void query(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
 			try {
-				Integer pagesize=5;
+				Integer pagesize=3;
 				Integer cp = Integer.parseInt(request.getParameter("cp")==null?"1":request.getParameter("cp"));
 				String tnumber = request.getParameter("tnumber");
 				

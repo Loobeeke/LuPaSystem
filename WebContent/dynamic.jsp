@@ -38,13 +38,13 @@
   <div class="bloglist left">
   		
   		<c:forEach items="${dynamic}" var="dynamic">
-  		<h3>${ dynamic.getDtitle()} </h3>
-	    <figure><img src="${ dynamic.getDpicture()}"></figure>
+  		<h3>${ dynamic.dtitle} </h3>
+	    <figure><img src="${ dynamic.dpicture}"></figure>
 	    <ul>
-	      <p>${ dynamic.getDcontent()}</p>
-	      <a title="${ dynamic.getDtitle()}" href="/" target="_blank" class="readmore">阅读全文>></a>
+	      <p>${ dynamic.dcontent}</p>
+	      <a title="${ dynamic.getDtitle()}" href="#" target="_blank" class="readmore"></a>
 	    </ul>
-	    <p class="dateview"><span>${ dynamic.getDdate()}</span><span>发布时间：[${ dynamic.getDtime()}]</span><span>作者：${ dynamic.getDautor()}</span></p>
+	    <p class="dateview"><span>${ dynamic.ddate}</span><span>发布时间：[${ dynamic.dtime}]</span><span>作者：${ dynamic.dautor}</span></p>
   		
 	  </c:forEach>
 	   ${pageTool}

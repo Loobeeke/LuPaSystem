@@ -163,10 +163,7 @@
                                         <img src="${tickets.getPicture()}" alt="product image" style="height:179.88px;">
                                     </div>
                                     <ul class="product-item-actions">
-                                        <li class="trigger-add-to-cart"><a href="#"><i class="ti ti-shopping-cart"></i></a></li>
                                         <li class="quick-view-trigger"><a href="#"><i class="ti ti-eye"></i></a></li>
-                                        <li class="trigger-add-to-compare"><a href="#"><i class="ti ti-reload"></i></a></li>
-                                        <li class="trigger-add-to-wishlist"><a href="#"><i class="ti ti-heart"></i></a></li>
                                     </ul>
                                     <span class="product-item-badge">New</span>
                                 </div>
@@ -255,16 +252,6 @@
                                 
                                 <span class="pricebox" id="PI1"> ¥ </span><del id="PI2">¥ </del>
 
-                                <div class="product-details-quantity">
-                                    <div class="quantity-select">
-                                        <input type="text" value="1">
-                                    </div>
-                                    <a href="#" class="sf-button sf-button-sm">
-                                        <span>ADD TO CART</span>
-                                    </a>
-                                </div>
-
-                               
 
                                 <div class="product-details-tags">
                                     <span>库存:</span>

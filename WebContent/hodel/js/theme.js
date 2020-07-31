@@ -395,8 +395,8 @@ $(function ($) {
 $(window).on('load', function () {
     /*--------- Page Loader ---------*/
     setTimeout(function () {
-        $("#loading").fadeOut(300);
-    }, 3100);
+        $("#loading").fadeOut(100);
+    }, 100);
 });
 
 $(window).scroll(function () {

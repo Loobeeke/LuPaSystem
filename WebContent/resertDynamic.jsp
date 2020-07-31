@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>路趴-写资讯</title>
+<title>路趴-发动态</title>
 
 <link rel="stylesheet" type="text/css" href="css/rbase.css">
 <link rel="stylesheet" type="text/css" href="css/rhome.css">
@@ -71,8 +71,9 @@ img{
 					<input type="hidden"name="dtime"id="time">
 				</div>
 				<div class="aui-form-input">
-					<label class="aui-label-control" for="tauthor"></label>
-					<input type="hidden"name="dauthor" value="${session.user.username }">
+					<%User user=(User)session.getAttribute("user"); %>
+					<label class="aui-label-control" for="dautor"></label>
+					<input type="hidden"name="dautor" value="<%=user.getUsername()%>">
 				</div>
 			</div>
 			<div class="aui-form-group-text">

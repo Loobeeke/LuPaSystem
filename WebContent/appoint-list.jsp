@@ -33,7 +33,7 @@
                 <div class="layui-col-md12">
                     <div class="layui-card">
                         <div class="layui-card-body ">
-                            <form class="layui-form layui-col-space5">
+                            <!-- <form class="layui-form layui-col-space5">
                            
                                 <div class="layui-input-inline layui-show-xs-block">
                                     <input type="text" name="username" placeholder="请输入标题内容" autocomplete="off" class="layui-input"></div>
@@ -41,7 +41,7 @@
                                     <button class="layui-btn" lay-submit="" lay-filter="sreach">
                                         <i class="layui-icon">&#xe615;</i></button>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                         <div class="layui-card-header">
                             <!-- <button class="layui-btn layui-btn-danger" onclick="delAll()">
@@ -70,7 +70,7 @@
                             </table>
                         </div>
                       
-                       <div class="layui-card-body ">
+                       <!-- <div class="layui-card-body ">
                             <div class="page">
                                 <div>
                                     <a class="prev" href="">&lt;&lt;</a>
@@ -80,7 +80,7 @@
                                     <a class="num" href="">489</a>
                                     <a class="next" href="">&gt;&gt;</a></div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
 										<td>`+item.astartaddress+`</td>
 										<td>`+item.aendaddress+`</td>
 										<td>`+item.aphone+`</td>
-										<td>`+item.gprice+`</td>
+										<td>`+item.aprice+`</td>
 										<td>`+item.atitle+`</td>
 										<td>`+item.acontent+`</td>
 										<td>`+item.atime+`</td>
@@ -119,7 +119,7 @@
 	                                            
 	                                          <div class="layui-btn-group">
 	                                            <button type="button" onclick="xadmin.open('编辑','appoint-edit.jsp?akid=`+item.akid+`')" class="layui-btn ">修改</button>
-	                                            <button type="button" href="appointment?action=delete&akid=`+item.akid+`" class="layui-btn">删除</button>
+	                                            <button type="button" onclick="window.location.href = 'appointment?action=delete&akid=`+item.akid+`'" class="layui-btn">删除</button>
 	                                          </div>
 	                                	</td>
 									</tr>

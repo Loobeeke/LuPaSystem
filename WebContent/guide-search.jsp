@@ -449,7 +449,7 @@ var _hmt = _hmt || [];
 <img id="top_title02" alt="" src="gui/htmlimg/toptitle02.png">
 </div><br><br>s
 <div class="showcase-examples l-over l-center">
-  <a href="Tickets?action=query" class="button button-rounded button-plain button-small-caps button-border">酒店信息展示</a>
+  <a href="Hotel?action=query" class="button button-rounded button-plain button-small-caps button-border">酒店信息展示</a>
   <a href="Tickets?action=query" class="button button-rounded button-plain button-small-caps button-border">门票信息展示</a>
   <!-- <a href="https://www.404v.com/" class="button button-rounded button-plain button-small-caps button-border">查询3</a> -->
   </div>

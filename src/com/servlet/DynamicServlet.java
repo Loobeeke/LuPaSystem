@@ -32,7 +32,7 @@ public class DynamicServlet extends BaseServlet {
 	
 	protected void query(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
 		try {
-			Integer pagesize=5;
+			Integer pagesize=4;
 			Integer cp = Integer.parseInt(request.getParameter("cp")==null?"1":request.getParameter("cp"));
 			String dnumber = request.getParameter("dnumber");
 			

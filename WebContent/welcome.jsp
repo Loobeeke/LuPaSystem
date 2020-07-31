@@ -97,20 +97,14 @@
                                         <th>开发小组</th>
                                         <td>路趴开发小组</td></tr>
                                     <tr>
-                                        <th>操作系统</th>
-                                        <td>WINNT</td></tr>
+                                        <th>开发工具</th>
+                                        <td>Eclipse</td></tr>
                                     <tr>
                                         <th>运行环境</th>
                                         <td>Tomcat7.0</td></tr>
                                     <tr>
-                                        <th>PHP版本</th>
-                                        <td>5.6.27</td></tr>
-                                    <tr>
                                         <th>MYSQL版本</th>
                                         <td>5.5.53</td></tr>
-                                    <tr>
-                                        <th>ThinkPHP</th>
-                                        <td>5.0.18</td></tr>
                                     <tr>
                                         <th>开始时间</th>
                                         <td>2020年-7月-15号</td></tr>
